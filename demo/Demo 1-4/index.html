@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basics Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">CIS 181 • CSS DEMO</p>
+    <h1>Make HTML Look Better with CSS</h1>
+    <p class="intro">This page starts with HTML content. The linked CSS file controls its colors, spacing, layout, and interactive states.</p>
+  </header>
+
+  <main>
+    <section class="lesson-section">
+      <h2>1. Selectors and Text</h2>
+      <p>CSS can select an HTML element, such as every <code>p</code>, or select a class, such as <code>.highlight</code>.</p>
+      <p class="highlight">This paragraph uses the <strong>highlight</strong> class.</p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>2. The Box Model</h2>
+      <p>Every element has content, padding, a border, and margin.</p>
+      <div class="box-model-example">Content with padding, border, and margin</div>
+    </section>
+
+    <section class="lesson-section">
+      <h2>3. Flexbox Layout</h2>
+      <p>The cards below are placed in a flexible row using <code>display: flex</code>.</p>
+      <div class="card-row">
+        <article class="card">
+          <h3>Color</h3>
+          <p>Use named colors, hexadecimal values, or RGB values to create a visual theme.</p>
+        </article>
+        <article class="card">
+          <h3>Spacing</h3>
+          <p>Use margin and padding to make content easier to read.</p>
+        </article>
+        <article class="card">
+          <h3>Layout</h3>
+          <p>Use Flexbox to arrange related content in rows or columns.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-section action-section">
+      <h2>4. Pseudo-classes</h2>
+      <p>Move your pointer over this link to see the <code>:hover</code> rule.</p>
+      <a class="demo-button" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics" target="_blank" rel="noreferrer">Learn more about CSS</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>CSS Basics Demo</p>
+  </footer>
+</body>
+</html>
