@@ -1,10 +1,13 @@
 /*Element selector: applies to the whole page */
 body {
-   Margin: 0;
-   font-family: Arial, sans-serif;
-   color: #1f2937;
-   background-color: #f4f7fb;
-   Line-height: 1.6,
+   margin: 0;
+   font-family: Verdana, Arial, sans-serif;
+   color: #4A4A4A;
+   background-color: #FCFCFC;
+   line-height: 1.6;
+   font-size: 15px;
+   padding-left: 40px;
+   padding-right: 40px;
 }
 
 /* Class selector: styles the page heading area */
@@ -15,11 +18,26 @@ body {
    background-color: #1d4ed8;
 }
 
-.site-header h1 {
+h1 {
    margin: 0;
-   font-size: 2.5rem;
+   font-family: Georgia, "Times New Roman", serif;
+   font-size: 52px;
+   color: #1A1A1A;
+   letter-spacing: 2px;
+   text-shadow: 1px 1px 2px #D5D5D5;
 }
 
+ h2 {
+   font-family: Georgia, "Times New Roman", serif;
+   font-size: 28px;
+   color: #0097A7;
+}
+
+img {
+   width: 380px;
+   border: 2px solid #0097A7;
+   margin: 20px 0;
+}
 
 .eyebrow {
    margin: 0 0 0.5rem;
