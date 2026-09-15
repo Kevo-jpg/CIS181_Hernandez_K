@@ -1,1 +1,34 @@
-/* CSS for CIS181 Applied Labs */
+/* ==========================================
+   Lab 1-4: CSS Foundations (Do not Modify)
+   ========================================== */
+body {
+    background-color: #FCFCFC;
+    color: #4A4A4A;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #1A1A1A;
+    font-size: 52px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #D5D5D5;
+}
+
+h2 {
+    color: #0097A7;
+    font-size: 28px;
+}
+
+img {
+    width: 380px;
+    border: 2px solid #0097A7;
+    margin: 20px 0;
+}
