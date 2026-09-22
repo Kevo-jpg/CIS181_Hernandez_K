@@ -1,0 +1,97 @@
+/* FORMS & USER INPUT
+   This stylesheet gives the sample form a clear, readable layout. */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+}
+
+form {
+    background-color: white;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+fieldset {
+    margin: 0 0 20px;
+    padding: 18px;
+    border: 1px solid #b8c2cc;
+    border-radius: 6px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #174a7e;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9ca8b3;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.question {
+    margin: 18px 0 0;
+    font-weight: bold;
+}
+
+.choice-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.choice-group label {
+    margin: 0 16px 0 0;
+    font-weight: normal;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #174a7e;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #5f6b75;
+}
+
+button:hover {
+    background-color: #0d355d;
+}
