@@ -9,23 +9,86 @@
 
 <body>
 
-    Earth Explorer Survey
+    <h1>Earth Explorer Survey</h1>
 
-    Earth is home to seven unique continents, each offering amazing landscapes, 
+
+    <p>Earth is home to seven unique continents, each offering amazing landscapes, 
     diverse wildlife, rich cultures, and unforgettable travel experiences. From
     tropical rainforests and snowy mountains to historic landmarks and beautiful
-    coastlines, every continent has something special to explore.
+    coastlines, every continent has something special to explore.</p>
 
-    Learn more about the world's continents, then complete the survey to share
-    your travel interests and dream destinations.
+    <p>Learn more about the world's continents, then complete the survey to share
+    your travel interests and dream destinations.</p>
 
-    <!-- Create the continent table here -->
+    
+    <table>
+        <tr>
+            <th>Continent</th>
+            <th>What can you Explore?</th>
+        </tr>
 
-    Share Your Travel Interests
+        <tr>
+            <td>Africa</td>
+            <td>wildlife, deserts, and exciting safari adventures</td>
+        </tr>
 
-    Tell us about the places you would most like to visit by completing the survey below.
+        <tr>
+            <td>Antartica</td>
+            <td>Glaciers, penguins, and breathtaking ice landscapes</td>
+        </tr>
 
-    <!-- Create the survey form here -->
+        <tr>
+            <td>Asia</td>
+            <td>Mountains, rainforests, acient temples, and vibrant cultures</td>
+        </tr>
+
+        <tr>
+            <td>Europe</td>
+            <td>Historic cities, castles, museums, scenic countryside</td>
+        </tr>
+
+        <tr>
+            <td>North America</td>
+            <td>Nationals parks, forests, canyons, and beautiful lakes</td>
+        </tr>
+
+        <tr>
+            <td>Australia</td>
+            <td>Coral reefs, beaches, unique wildlife, and the Outback</td>
+        </tr>
+
+        <tr>
+            <td>South America</td>
+            <td>Amazon Rainforest, Andes Mountains, and spectacular waterfalls</td>
+        </tr>
+    </table>
+
+<h2>Share Your Travel Interests</h2>
+
+    <p>Tell us about the places you would most like to visit by completing the survey below.</p>
+
+    <form method="post" action="https://httpbin.org/post">
+        <label  for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email"
+
+        <label for="continent">Which continent would you most like to explor?</label>
+        <select id="continent" name="continent"> 
+            <option value="Africa">Africa</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="Australia">Australia</option>
+            <option value="South America">South America</option>
+            
+        </select>
+
+    </form>
+       
+     
 
 </body>
 
