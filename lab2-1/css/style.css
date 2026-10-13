@@ -1,0 +1,150 @@
+/* CIS181 Applied Lab 2-1 — Lessons 2-1 and 2-2 */
+
+/* ==========================================
+   Lab 1-4: CSS Foundations (Do not Modify)
+   ========================================== */
+body {
+    background-color: #FCFCFC;
+    color: #4A4A4A;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #1A1A1A;
+    font-size: 52px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #D5D5D5;
+}
+
+h2 {
+    color: #0097A7;
+    font-size: 28px;
+}
+
+img {
+    width: 380px;
+    border: 2px solid #0097A7;
+    margin: 20px 0;
+}
+
+/* ==========================================
+   Lab 1-5: Tables and Forms - Start Here!
+   ========================================== */
+
+/* Table Styling */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    border: 1px solid #2E8B57;
+    background-color: #D9F3F5;
+    color: #0097A7;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #2E8B57;
+    padding: 8px;
+}
+
+
+/* Form Styling */
+
+form {
+    margin-top: 35px;
+}
+
+
+
+input,
+select,
+textarea {
+    border: 1px solid #2E8B57;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+input[type="radio"] {
+    margin-top: 12px;
+}
+
+input[type="radio"] + label {
+    margin-right: 24px;
+}
+
+input[type="submit"] {
+    background-color: #0097A7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+/* Lab 2-1 Page Layout and Accessibility Styles */
+
+.page-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+header,
+footer {
+    background-color: #D9F3F5;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 5px #AAAAAA;
+}
+
+.content {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.survey-content {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+a:link {
+    color: #0097A7;
+}
+
+a:visited {
+    color: #666666;
+}
+
+a:hover {
+    color: #006064;
+}
+
+a:active {
+    color: #FF5722;
+}
+
+a:focus {
+    outline: 2px solid #0097A7;
+}
+
+#earth-image {
+    float: right;
+    margin: 0 0 15px 20px;
+}
+
+.clear {
+    clear: both;
+}
