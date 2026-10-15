@@ -1,22 +1,41 @@
 # Demo 2-3: Navigation Structure - Student
 
-Start with the completed Thai Terrace website from Demo 2-2. The existing layout, typography, images, and content are complete. Visit page content is supplied. Work on the numbered TODOs in the HTML files.
+Start with the completed Thai Terrace website from Demo 2-2. Layout, typography, images, and existing content are complete. Visit page content is supplied. CSS requires no changes.
 
-## Files
+The TODO numbers restart on each page. Work from top to bottom in each file, in the order below.
 
-- `index.html`: Home.
-- `pages/menu.html`: Menu.
-- `pages/visit.html`: Visit.
-- `css/style.css` and `images/`: completed work from Demo 2-2.
+## 1. Home: `index.html`
 
-## Six tasks
+1. Add the skip link before the header.
+2. Add the primary navigation list with Home, Menu, and Visit links.
+3. Mark Home with `aria-current="page"` in that navigation.
+4. Add `id="main"` to the existing `main` element.
+5. Add the “View hours and directions” link to `pages/visit.html#hours`.
 
-1. **Primary navigation:** In each header, add `nav` with `aria-label="Primary"`. Inside it, use a `ul` with three `li` elements and links labeled Home, Menu, and Visit. Use the path checklist below.
-2. **Current page:** Add `aria-current="page"` only to the current page's primary-navigation link.
-3. **Fragment and return links:** On Visit, add `id="hours"` to the Hours and directions section. On Home, add a link to `pages/visit.html#hours` labeled “View hours and directions”. On Visit, add a link to `menu.html` labeled “Return to the menu”.
-4. **Breadcrumb:** Before Visit's `main`, add `nav` with `aria-label="Breadcrumb"` and class `container`. Include a Home link to `../index.html`, followed by `/ Visit` as plain text.
-5. **Skip links:** Before each header, add a link to `#main` labeled “Skip to main content” with class `skip-link`. Add `id="main"` to each existing `main` element.
-6. **Test:** From every page, test all three primary links. Test the hours fragment, breadcrumb, return link, and existing full-image links. Use Tab and Enter to test the skip links and navigation.
+## 2. Menu: `pages/menu.html`
+
+1. Add the skip link before the header.
+2. Add the primary navigation list using paths from the `pages` folder.
+3. Mark Menu with `aria-current="page"` in that navigation.
+4. Add `id="main"` to the existing `main` element.
+
+## 3. Visit: `pages/visit.html`
+
+1. Add the skip link before the header.
+2. Add the primary navigation list using paths from the `pages` folder.
+3. Mark Visit with `aria-current="page"` in that navigation.
+4. Add the breadcrumb: a `nav` with `aria-label="Breadcrumb"` and class `container`, containing a Home link followed by `/ Visit` as plain text.
+5. Add `id="main"` to the existing `main` element.
+6. Add `id="hours"` to the Hours and directions section.
+7. Add the “Return to the menu” link to `menu.html`.
+
+## 4. Test the finished website
+
+- From every page, test Home, Menu, and Visit.
+- On Home, follow “View hours and directions” to the Hours and directions section on Visit.
+- On Visit, test the breadcrumb Home link and “Return to the menu”.
+- Use Tab and Enter to test skip links and navigation.
+- Confirm that the existing menu image links still open the full images.
 
 ## Path checklist
 
@@ -26,4 +45,4 @@ Start with the completed Thai Terrace website from Demo 2-2. The existing layout
 | `pages/menu.html` | `../index.html` | `menu.html` | `visit.html` | `../css/style.css` |
 | `pages/visit.html` | `../index.html` | `menu.html` | `visit.html` | `../css/style.css` |
 
-Keep the whole folder together. CSS is already complete for this lesson. Navigation and skip-link styling are introduced in Demo 2-4.
+Keep the whole folder together. Navigation and skip-link styling are introduced in Demo 2-4.
