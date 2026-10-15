@@ -10,12 +10,12 @@ body {
 img {
   object-fit: cover;
 }
-/* LESSON 2-1 — TASK 1: Include padding and borders in each declared width. */
+/* Completed Demo 2-1: Include padding and borders in each declared width. */
 * {
   box-sizing: border-box;
 }
 
-/* LESSON 2-1 — TASK 2: Full-width bands, with a centered desktop content area. */
+/* Completed Demo 2-1: Full-width bands, with a centered desktop content area. */
 .container {
   width: 960px;
   margin: 0 auto;
@@ -46,7 +46,7 @@ footer {
 }
 
 
-/* LESSON 2-1 — TASK 3: Five featured favorites, one per category, in fixed desktop columns. */
+/* Completed Demo 2-1: Five featured favorites, one per category, in fixed desktop columns. */
 .featured-row {
   display: grid;
   grid-template-columns: 464px 464px;
@@ -61,7 +61,7 @@ footer {
   height: 290px;
 }
 
-/* LESSON 2-1 — TASK 4: Stack category cards; two dish columns inside each category. */
+/* Completed Demo 2-1: Stack category cards; two dish columns inside each category. */
 .menu-intro {
   padding-bottom: 8px;
 }
@@ -136,7 +136,7 @@ footer {
    New text styling added to the completed 2-1 layout.
    ================================================== */
 
-/* LESSON 2-2 — TASK 1: Body text. */
+/* Completed Demo 2-2: Body text. */
 html {
   font-size: 16px;
 }
@@ -146,7 +146,7 @@ body {
   line-height: 1.5;
 }
 
-/* LESSON 2-2 — TASK 2: Headings. */
+/* Completed Demo 2-2: Headings. */
 h1 {
   font-size: 40px;
 }
@@ -162,7 +162,7 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-/* LESSON 2-2 — TASK 3: Category labels and prices. */
+/* Completed Demo 2-2: Category labels and prices. */
 .featured-dish > p {
   text-transform: uppercase;
 }
@@ -170,7 +170,7 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-/* LESSON 2-2 — TASK 4: Room for larger text. */
+/* Completed Demo 2-2: Room for larger text. */
 .menu-item {
   height: auto;
   min-height: 160px;

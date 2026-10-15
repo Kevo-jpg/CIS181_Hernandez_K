@@ -1,15 +1,22 @@
-# Demo 2-3: Navigation Structure - Starter Files
+# Demo 2-3: Navigation Structure - Student
 
-This starter begins with the completed Thai Terrace website from Demo 2-2. The new Lesson 2-3 navigation work is marked with `TODO` comments.
+Start with the completed Thai Terrace website from Demo 2-2. The existing layout, typography, images, and content are complete. Visit page content is supplied. Work on the numbered TODOs in the HTML files.
 
-## Your tasks
+## Files
 
-1. Add a primary navigation list to Home, Menu, and Visit.
-2. Use correct relative paths from each file's folder.
-3. Mark only the current page with `aria-current="page"`.
-4. Add the Home fragment link to `pages/visit.html#hours`.
-5. Add the Visit-page return link to the Menu page.
-6. Test every link in a browser.
+- `index.html`: Home.
+- `pages/menu.html`: Menu.
+- `pages/visit.html`: Visit.
+- `css/style.css` and `images/`: completed work from Demo 2-2.
+
+## Six tasks
+
+1. **Primary navigation:** In each header, add `nav` with `aria-label="Primary"`. Inside it, use a `ul` with three `li` elements and links labeled Home, Menu, and Visit. Use the path checklist below.
+2. **Current page:** Add `aria-current="page"` only to the current page's primary-navigation link.
+3. **Fragment and return links:** On Visit, add `id="hours"` to the Hours and directions section. On Home, add a link to `pages/visit.html#hours` labeled “View hours and directions”. On Visit, add a link to `menu.html` labeled “Return to the menu”.
+4. **Breadcrumb:** Before Visit's `main`, add `nav` with `aria-label="Breadcrumb"` and class `container`. Include a Home link to `../index.html`, followed by `/ Visit` as plain text.
+5. **Skip links:** Before each header, add a link to `#main` labeled “Skip to main content” with class `skip-link`. Add `id="main"` to each existing `main` element.
+6. **Test:** From every page, test all three primary links. Test the hours fragment, breadcrumb, return link, and existing full-image links. Use Tab and Enter to test the skip links and navigation.
 
 ## Path checklist
 
@@ -19,4 +26,4 @@ This starter begins with the completed Thai Terrace website from Demo 2-2. The n
 | `pages/menu.html` | `../index.html` | `menu.html` | `visit.html` | `../css/style.css` |
 | `pages/visit.html` | `../index.html` | `menu.html` | `visit.html` | `../css/style.css` |
 
-Open index.html and test all links. Navigation CSS is introduced in Demo 2-4.
+Keep the whole folder together. CSS is already complete for this lesson. Navigation and skip-link styling are introduced in Demo 2-4.
