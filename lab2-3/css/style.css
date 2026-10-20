@@ -1,0 +1,200 @@
+/* CIS181 Applied Lab 2-3 — Lessons 2-3 and 2-4 */
+
+/* ==========================================
+   Lab 1-4: CSS Foundations (Do not Modify)
+   ========================================== */
+body {
+    background-color: #FCFCFC;
+    color: #4A4A4A;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #1A1A1A;
+    font-size: 52px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #D5D5D5;
+}
+
+h2 {
+    color: #0097A7;
+    font-size: 28px;
+}
+
+img {
+    width: 380px;
+    border: 2px solid #0097A7;
+    margin: 20px 0;
+}
+
+/* ==========================================
+   Lab 1-5: Tables and Forms - Start Here!
+   ========================================== */
+
+/* Table Styling */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    border: 1px solid #2E8B57;
+    background-color: #D9F3F5;
+    color: #0097A7;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #2E8B57;
+    padding: 8px;
+}
+
+
+/* Form Styling */
+
+form {
+    margin-top: 35px;
+}
+
+
+
+input,
+select,
+textarea {
+    border: 1px solid #2E8B57;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+input[type="radio"] {
+    margin-top: 12px;
+}
+
+input[type="radio"] + label {
+    margin-right: 24px;
+}
+
+input[type="submit"] {
+    background-color: #0097A7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+
+/* ==========================================
+   Lab 2-1: Shared Earth Explorer Layout
+   ========================================== */
+body {
+    background: #eaf4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    width: 1105px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+header,
+footer {
+    padding: 1em 2em;
+    background: #d9f3f5;
+}
+
+header { border-bottom: 4px solid #0097a7; }
+footer { clear: both; margin-top: 2em; border-top: 2px solid #2e8b57; }
+.content,
+.survey-content { padding: 1em 0; }
+.content { min-height: 420px; }
+
+a:link { color: #006d77; }
+a:visited { color: #5b4b8a; }
+a:hover { color: #c85a17; }
+a:active { color: #b03a2e; }
+a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
+
+#earth-image {
+    float: right;
+    margin: 0 0 1em 2em;
+}
+.clear { clear: right; }
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #3d3028;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background: #fff4e8;
+}
+
+.nav-list a:focus-visible {
+    outline: 3px solid #d65312;
+    outline-offset: 3px;
+}
+
+.content {
+    float: left;
+    width: 68%;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    float: right;
+    width: 28%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #d9e8df;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: auto;
+}
