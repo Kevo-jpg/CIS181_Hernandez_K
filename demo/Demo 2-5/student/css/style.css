@@ -229,17 +229,25 @@ h1, h2, h3 {
   padding: 1rem;
 }
 
+
 /* ==================================================
    LESSON 2-5: RESPONSIVE DESIGN
    Complete TODOs 1-10 in CSS file order.
    ================================================== */
 
 /* TODO 1: Fluid container — .container
-   Add a rule with width: 92%; max-width: 60rem;
+   Add a rule with width: 92%; max-width: 60rem
+
+
 
    Before: .container { width: 960px; margin: 0 auto; }
    Now: width: 92%; max-width: 60rem;
    Keep: margin: 0 auto still centers the container. */
+
+   .container {
+    width: 92%;
+    max-width: 60rem;
+   } 
 
 /* TODO 2: Media limits — img, iframe
    Add a rule with max-width: 100%;
@@ -247,6 +255,10 @@ h1, h2, h3 {
    Before: no max-width limit on img or iframe.
    New: max-width: 100%; limits media to the parent width.
    This does not force small images to grow. */
+
+img, iframe {
+  max-width: 100%;
+}
 
 /* TODO 3: Flexible photos — .hall-photo, .dish-photo
    Add a rule with width: 100%; height: auto;
@@ -256,6 +268,11 @@ h1, h2, h3 {
    Now, both: width: 100%; height: auto;
    The image files supply their original proportions. */
 
+.hall-photo, .dish-photo {
+  height: auto;
+  width: 100%;
+  }
+
 /* TODO 4: Map frame — iframe
    Add a rule with width: 100%; height: auto; aspect-ratio: 16 / 9;
 
@@ -264,6 +281,12 @@ h1, h2, h3 {
    height: auto replaces the fixed 350px height.
    16 / 9 is a chosen frame ratio, not the original 960 / 350. */
 
+ iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 /* TODO 5: Featured grid — .featured-row
    Add a rule with grid-template-columns: 1fr;
 
@@ -271,11 +294,19 @@ h1, h2, h3 {
    Now: grid-template-columns: 1fr;
    Keep: display: grid and gap: 32px; one column replaces two. */
 
+   .featured-row {
+    grid-template-columns: 1fr;
+   }
+
 /* TODO 6: Featured card width — .featured-dish
    Add a rule with width: auto;
 
    Before: .featured-dish { width: 464px; }
    Now: width: auto; lets the card fill its grid column. */
+
+   .featured-dish {
+    width: auto;
+   }
 
 /* TODO 7: Menu columns — .dish-grid
    Add a rule with grid-template-columns: 1fr;
@@ -284,12 +315,23 @@ h1, h2, h3 {
    Now: grid-template-columns: 1fr;
    Keep: display: grid and gap: 16px. Check pages/menu.html. */
 
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
 /* TODO 8: Menu card wrapping — .menu-item
    Add a rule with flex-wrap: wrap;
 
    Before: .menu-item already uses display: flex; its default is flex-wrap: nowrap.
    New: flex-wrap: wrap; lets the direct children move to another line.
    Keep: display: flex; text and thumbnail are the flex items. */
+
+   .menu-item {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* TODO 9: Menu text space — .dish-copy
    Add a rule with flex-basis: 12rem;
@@ -299,10 +341,20 @@ h1, h2, h3 {
    Keep: growing and shrinking are allowed; min-width: 0 still applies.
    12rem is a starting size, not a minimum width. */
 
+.dish-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+
 /* TODO 10: Long text — body
    Add a rule with overflow-wrap: anywhere;
 
    Before: body uses the default overflow-wrap: normal.
    New: overflow-wrap: anywhere; allows long unbroken text to wrap.
    This wraps text, not flex items. */
+
+body {
+    overflow-wrap: anywhere;
+}
 
