@@ -1,0 +1,214 @@
+/* ==========================================
+   Lab 1-4: CSS Foundations (Do not Modify)
+   ========================================== */
+body {
+    background-color: #FCFCFC;
+    color: #4A4A4A;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #1A1A1A;
+    font-size: 52px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #D5D5D5;
+}
+
+h2 {
+    color: #0097A7;
+    font-size: 28px;
+}
+
+img {
+    width: 380px;
+    border: 2px solid #0097A7;
+    margin: 20px 0;
+}
+
+/* ==========================================
+   Lab 1-5: Tables and Forms - Start Here!
+   ========================================== */
+
+/* Table Styling */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    border: 1px solid #2E8B57;
+    background-color: #D9F3F5;
+    color: #0097A7;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #2E8B57;
+    padding: 8px;
+}
+
+
+/* Form Styling */
+
+form {
+    margin-top: 35px;
+}
+
+
+
+input,
+select,
+textarea {
+    border: 1px solid #2E8B57;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+input[type="radio"] {
+    margin-top: 12px;
+}
+
+input[type="radio"] + label {
+    margin-right: 24px;
+}
+
+input[type="submit"] {
+    background-color: #0097A7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+
+/* ==========================================
+   Lab 2-1: Shared Earth Explorer Layout
+   ========================================== */
+body {
+    background: #eaf4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    width: 1105px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+header,
+footer {
+    padding: 1em 2em;
+    background: #d9f3f5;
+}
+
+header { border-bottom: 4px solid #0097a7; }
+footer { clear: both; margin-top: 2em; border-top: 2px solid #2e8b57; }
+.content,
+.survey-content { padding: 1em 0; }
+.content { min-height: 420px; }
+
+a:link { color: #006d77; }
+a:visited { color: #5b4b8a; }
+a:hover { color: #c85a17; }
+a:active { color: #b03a2e; }
+a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
+
+#earth-image {
+    float: right;
+    margin: 0 0 1em 2em;
+}
+.clear { clear: right; }
+
+
+/* ==========================================
+   Lab 2-3: Navigation and Discover Earth Sidebar
+   ========================================== */
+nav ul,
+.sidebar ul { margin: 0; padding: 0; list-style-type: none; }
+nav li { display: inline-block; margin-right: 0.5em; }
+nav a { display: block; padding: 0.55em 0.8em; background: #006d77; color: #ffffff; text-decoration: none; }
+nav a:hover,
+nav a:focus { background: #c85a17; color: #ffffff; }
+
+.content { float: left; width: 730px; }
+.sidebar { float: right; width: 330px; padding: 1em; background: #f4f9f5; }
+.wrapper { width: 100%; }
+.sidebar h3 { margin: 0 0 0.5em; padding-bottom: 0.35em; border-bottom: 2px solid #2e8b57; font-size: 20px; text-transform: uppercase; }
+.sidebar li { padding: 0.5em 0; border-bottom: 1px solid #b7d6c2; }
+
+
+/* ==========================================
+   Lab 2-5: Responsive Conversion
+   ========================================== */
+body { font-size: 15px; }
+.page-wrapper {
+    width: 86.33%; /* 1105 ÷ 1280 = 0.8633 → 86.33% */
+    max-width: 1105px;
+    padding: 1.333em; /* 20 ÷ 15 = 1.333em */
+}
+h1 { font-size: 3.467em; /* 52 ÷ 15 = 3.467em */ }
+h2 { font-size: 1.867em; /* 28 ÷ 15 = 1.867em */ }
+h3 { font-size: 1.333em; /* 20 ÷ 15 = 1.333em */ }
+.content { width: 66.06%; /* 730 ÷ 1105 = 0.6606 → 66.06% */ }
+.sidebar { width: 29.86%; /* 330 ÷ 1105 = 0.2986 → 29.86% */ }
+#earth-image { max-width: 100%; height: auto; }
+
+@media screen and (max-width: 768px) {
+    .page-wrapper { width: 100%; padding: 1em; box-sizing: border-box; }
+    .content,
+    .sidebar { float: none; width: 100%; box-sizing: border-box; }
+    #earth-image { float: none; margin: 1em 0; }
+    nav li { display: block; margin: 0 0 0.35em; }
+}
+
+/* Table usability */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f0e8;
+}
+
+/* Form usability */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+/* Focus indicators */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #336699;
+    outline-offset: 2px;
+}
