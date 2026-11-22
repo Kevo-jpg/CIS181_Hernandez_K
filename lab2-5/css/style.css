@@ -1,0 +1,191 @@
+/* CIS181 Applied Lab 2-5 — Lessons 2-5 and 2-6 */
+
+/* ==========================================
+   Lab 1-4: CSS Foundations (Do not Modify)
+   ========================================== */
+body {
+    background-color: #FCFCFC;
+    color: #4A4A4A;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    color: #1A1A1A;
+    font-size: 3.25em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #D5D5D5;
+}
+
+h2 {
+    color: #0097A7;
+    font-size: 1.75em;
+}
+
+img {
+    width: 380px;
+    border: 2px solid #0097A7;
+    margin: 20px 0;
+}
+
+/* ==========================================
+   Lab 1-5: Tables and Forms - Start Here!
+   ========================================== */
+
+/* Table Styling */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    border: 1px solid #2E8B57;
+    background-color: #D9F3F5;
+    color: #0097A7;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #2E8B57;
+    padding: 8px;
+}
+
+
+/* Form Styling */
+
+form {
+    margin-top: 35px;
+}
+
+
+
+input,
+select,
+textarea {
+    border: 1px solid #2E8B57;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+input[type="radio"] {
+    margin-top: 12px;
+}
+
+input[type="radio"] + label {
+    margin-right: 24px;
+}
+
+input[type="submit"] {
+    background-color: #0097A7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+
+/* ==========================================
+   Lab 2-1: Shared Earth Explorer Layout
+   ========================================== */
+body {
+    background: #eaf4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    /* 1105 / 1280 = 86.3% */ 
+    width: 86.3%;
+    max-width: 1105px;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+header,
+footer {
+    padding: 1em 2em;
+    background: #d9f3f5;
+}
+
+header { border-bottom: 4px solid #0097a7; }
+footer { clear: both; margin-top: 2em; border-top: 2px solid #2e8b57; }
+.content,
+.survey-content { padding: 1em 0; }
+.content { min-height: 420px; }
+
+a:link { color: #006d77; }
+a:visited { color: #5b4b8a; }
+a:hover { color: #c85a17; }
+a:active { color: #b03a2e; }
+a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
+
+#earth-image {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 1em 2em;
+}
+.clear { clear: right; }
+
+
+/* ==========================================
+   Lab 2-3: Navigation and Discover Earth Sidebar
+   ========================================== */
+nav ul,
+.sidebar ul { margin: 0; padding: 0; list-style-type: none; }
+nav li { display: inline-block; margin-right: 0.5em; }
+nav a { display: block; padding: 0.55em 0.8em; background: #006d77; color: #ffffff; text-decoration: none; }
+nav a:hover,
+nav a:focus { background: #c85a17; color: #ffffff; }
+
+.content {
+    /* 730 / 1105 = 66.06% */
+    float: left;
+    width: 66.06%;
+}
+
+.sidebar {
+    /* 330 / 1105 = 29.86% */
+    float: right;
+    width: 29.86%;
+    padding: 1em;
+    background: #f4f9f5;
+}
+.wrapper { width: 100%; }
+.sidebar h3 { margin: 0 0 0.5em; padding-bottom: 0.35em; border-bottom: 2px solid #2e8b57; font-size: 1.5em; text-transform: uppercase; }
+.sidebar li { padding: 0.5em 0; border-bottom: 1px solid #b7d6c2; }
+
+@media (max-width: 768px) {
+    .content,
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    .page-wrapper {
+        width: 100%;
+        padding: 1em;
+    }
+
+    #earth-image {
+        float: none;
+        display: block;
+        margin: 0 auto 1em;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+}
